@@ -1,0 +1,714 @@
+body,
+html{
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1,
+h2,
+h3 {
+    font-family: "Poppins",sans-serif;
+    font-weight:bold;
+    color: #554D89;
+}
+button:hover{
+    cursor: pointer;
+}
+*{box-sizing: border-box}
+a{
+    text-decoration: none;
+}
+hr{
+    color: #E1E4EDCC;
+    width: 100%;}
+ul{
+    list-style:none;}
+.content{
+    width: 1146px;
+    margin: 0 auto;
+}
+.topHeader{
+    display: flex;
+    justify-content: space-between;
+    color: #716C80;
+    text-align: center;
+    padding:24px 0 15px;
+}
+.topPhone{
+    position: relative;
+    color: #716C80;
+}
+.topPhone:hover{
+    text-decoration: underline;
+}
+.topPhone:before{
+    content: " ";
+    height: 18px;
+    width: 20px;
+    background-image: url("imgIcon/envelope.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -20px;
+}
+.header{
+    color:#5B5766;
+    display: flex;
+    margin-top: 24px ;
+    line-height: 15px;
+
+}
+.headerMenu{
+    width: 60%;
+    display: flex;
+}
+.logo{
+    height: 40px;
+    width: 40px;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.menu li{
+    display: inline;
+    margin: 0 15px;
+    padding-bottom: 18px ;
+}
+.menu li > a{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color:#5B5766;
+}
+.menu li > a:before{
+    content: "";
+    width: 74px;
+    height: 2px;
+    background: linear-gradient(26.57deg, #6852ED 16.67%, #BA43FC 100%);
+}
+.menu li > a:hover{
+    font-weight: bold;
+}
+.blog{
+    position: relative;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    width: 170px;
+    box-shadow: 0 0 20px #e1e4ed;
+    right: -110px;
+    top: 39px;
+    padding: 20px 10px;
+    line-height: 25px;
+    z-index: 999999;
+
+}
+.blog:hover .submenu{
+    display: block;
+}
+.headerAcc{
+    width: 40%;
+    display: flex;
+   justify-content: flex-end;
+    align-items: center;
+}
+.headerAcc > button {
+    border-radius: 20px;
+    border-color:#6852ED;
+    color:#6852ED;
+    margin: auto 8px;
+    padding: 10px 15px;
+    background: none;
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+}
+.login:hover, .createAcc:hover{
+    background: linear-gradient(to top right, #6852ED, #BA43FC);
+    color: white;
+    border: none;
+}
+.propOne{
+    display: flex;
+    margin-top: 80px;
+    position: relative;
+}
+.propText{
+    margin-top: 60px;
+}
+.propText > h1{
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+}
+.propText > p{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: left;
+}
+.propButtons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.propButtons  button {
+    border: none;
+    border-radius: 20px;
+}
+.scrollDown{
+    position: absolute;
+    bottom: 65px;
+    left: 40%;
+}
+.scrollDown:hover{
+    transform: scale(1.1);
+}
+.special{
+    padding:13px 30px;
+    background: linear-gradient(to top right, #6852ED, #BA43FC);
+    color: white;
+    font-size: 16px;
+}
+.special:hover{
+    transform: scale(1.1);
+}
+.notSpecial{
+    color: #554D89;
+    background: none;
+    font-size: 16px;
+}
+.notSpecial:hover{
+    transform: scale(1.2);
+
+}
+.services{
+    display: flex;
+}
+.services-blocks{
+    margin: 15px;
+    width: 345px;
+    height: 230px;
+    box-shadow: 0 0 20px #E1E4ED;
+    border-radius:10px;
+    position: relative;
+}
+.dollarCircle:before{
+    content: url("imgIcon/Dolar-circle.png");
+    height: 31px;
+    width: 32px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.searchDollar:before{
+    content:" ";
+    background-image: url("imgIcon/search-dollar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 31px;
+    width: 32px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.fileDollar:before{
+    content: url("imgIcon/file-dollar.png");
+    height: 31px;
+    width: 32px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.handDollar:before{
+    content: url("imgIcon/hand-usd.png");
+    height: 31px;
+    width: 32px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.servicesLink{
+    display: none;
+}
+.services-blocks:hover{
+    background: linear-gradient(to top right, #6852ED, #BA43FC);
+    box-shadow: 0 0 20px rgba(104, 82, 237, 0.8);
+    color: white;
+}
+.servicesTitle{
+    padding:80px 30px 0 30px;
+}
+.services-blocks:hover .servicesIcon{
+    display: none;
+}
+.services-blocks:hover  .servicesTitle{
+    padding-top: 0;
+    color: white;
+}
+.services-blocks:hover .servicesLink {
+    display: block;
+    border: none;
+    background: none;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 30px;
+}
+.servicesFunction:hover{
+    margin-top: -25px;
+
+}
+.services-blocks > p{
+    margin: 20px 30px 30px;
+}
+.propTwo{
+    display: flex;
+    margin-top: 50px;
+}
+.propTwo > .propText{
+    margin-top: 105px;
+}
+.propTwo > .propText > h2{
+    font-size: 34px;
+    line-height: 42px;
+}
+.propTwo > .propText > p{
+    font-size: 18px;
+    line-height: 28px;
+}
+.propTwo > .propText > .propButtons{
+    justify-content: start;
+}
+.propTwo > .propText > .propButtons > .special{
+    margin-right: 30px;
+}
+.videoBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/VideoBack.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 480px;
+    width: 100%;
+    margin-top: 140px;
+}
+.preVideoText{
+    width: 430px;
+    text-align: center;
+    padding-bottom: 120px;
+}
+.preVideoText > h2 {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 42px;
+}
+.preVideoText > p {
+    font-size: 18px;
+    line-height: 28px;
+}
+.propThree{
+    display: flex;
+    margin-top: 130px;
+}
+.propThree > .propText {
+    margin-top: 180px;
+    width: 510px;
+    margin-right: 70px;
+    text-align: left;
+}
+.propThree > .propText > p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 30px;
+}
+.propThree > .propText > .propButtons {
+    justify-content: start;
+}
+.propThree > .propText > .propButtons > .special{
+    margin-right: 30px;
+}
+.servicesMore{
+    display: flex;
+    margin-top: 120px;
+}
+.servicesMore > .services{
+    display: flex;
+    flex-wrap: wrap;
+    width: 770px;
+    margin-right: 60px;
+}
+.servicesMore > .propText{
+    width: 330px;
+    margin-top: 80px;
+}
+.servicesMore > .services > .services-blocks{
+    width: 345px;
+}
+.servicesMore > .propText > h2 {
+    font-size: 34px;
+    line-height: 46px;
+}
+.servicesMore > .propText > p{
+    font-size: 18px;
+    line-height: 28px;
+}
+.servicesMore > .propText > .propButtons{
+    justify-content: start;
+}
+.skills{
+    display: flex;
+    margin-top: 140px;
+}
+.skills > .propText{
+    width: 540px;
+    margin-top: 0;
+    margin-right: 60px;
+}
+.skills > .propText > h1 {
+    margin-top: 0;
+}
+.skills > .propText > p{
+    font-size: 18px;
+    line-height: 27px;
+}
+.skills > .propText > .propButtons{
+justify-content: start;
+}
+.skills > .statistic{
+    width: 540px;
+}
+.statisticBlock{
+    margin-bottom: 30px;
+}
+.statisticBlockText{
+    display: flex;
+    justify-content: space-between;
+}
+.entice{
+    margin-top: 150px;
+    height: 142px;
+    background-image: url("img/secondBg.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.entice > .enticeText{
+    width: 1140px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.enticeText > h3{
+    margin: 0;
+}
+.enticeText > .contact {
+    border-radius: 20px;
+    border-color: #6852ED;
+    color: #6852ED;
+    padding: 5px 15px;
+    background: none;
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: center;
+}
+.curses{
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cursCard{
+    box-shadow: 0 0 20px #E1E4ED;
+    border-radius: 10px;
+}
+.cardContent{
+    padding:60px;
+}
+.cursName{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #554D89;
+    padding-bottom: 20px;
+    position: relative;
+}
+.cursName:before{
+    content: " ";
+    height: 2px;
+    width: 40px;
+    border-bottom: 2px solid #BA43FC;
+    border-radius: 2px;
+    position: absolute;
+    display:block;
+    bottom: 10px;
+}
+.cursPrice{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    color: #554D89;
+    position: relative;
+}
+.cursPrice:before{
+    content: "Per month";
+    height: 21px;
+    width: 90px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    position: absolute;
+    display:block;
+    bottom: -20px;
+}
+.cursBenefitsList{
+    margin-top: 60px;
+    font-size: 18px;
+    padding-left: 30px;
+}
+.cursBenefits{
+    padding: 5px 0;
+}
+.accepted{
+    color:#5a5666;
+    font-weight: bolder;
+    position: relative;
+}
+.accepted:before{
+    content: " ";
+    height: 18px;
+    width: 18px;
+    background-image: url("imgIcon/check.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    left: -30px;
+    bottom: 7px;
+}
+.notAccepted{
+    color: #716C80;
+    opacity: .7;
+    position: relative;
+}
+.notAccepted:before{
+    content: " ";
+    height: 18px;
+    width: 18px;
+    background-image: url("imgIcon/X.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    left: -30px;
+    bottom: 7px;
+}
+.cursStart{
+    border-radius: 20px;
+    border: none;
+    letter-spacing: 1px;
+}
+.hot:after{
+    content: "BEST CHOISE";
+    position: absolute;
+    width: 86px;
+    height: 26px;
+    font-size: 11px;
+    font-weight: bold;
+    background: #E1E4ED99;
+    color: #EF7171;
+    right: 0;
+    border-radius: 15px;
+    text-align: center;
+
+}
+.help{
+    display: flex;
+    margin-top: 100px;
+}
+.helpBlock > .propText {
+    padding-left: 90px ;
+}
+.helpBlock > .propText > h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+.helpBlock > .propText > p{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    margin-right: 6px;
+}
+.helpBlock > .propText > .propButtons{
+    justify-content: start;
+}
+.questions, .support{
+    position: relative;
+}
+.questions:before{
+    content: " ";
+    height: 32px;
+    width: 32px;
+    background-image: url("imgIcon/question-circle.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    left: 30px;
+}
+.support:before{
+    content: " ";
+    height: 32px;
+    width: 32px;
+    background-image: url("imgIcon/headset.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    display: block;
+    left: 30px;
+}
+footer{
+    margin-top: 110px;
+    height: 374px;
+    width: 100%;
+    background-image: url("img/footerBg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+}
+.footerContent{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 65px;
+    width: 1146px;
+    margin: 0 auto;
+}
+.footerBox{
+    width: 300px;
+}
+.footerContacts{
+    text-align: left;
+    margin-left: 50px;
+}
+.footerContacts > h2{
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.footerPhone{
+    position: relative;
+    color: white;
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: bold;
+    margin-left: 75px;
+}
+.footerPhone:before{
+    content: "Have questions?";
+    color: white;
+    width: 118px;
+    height: 21px;
+    font-size: 14px;
+    line-height: 21px;
+    position: absolute;
+    top: -20px;
+}
+.footerPhone:after{
+    content: " ";
+    width: 50px;
+    height: 42px;
+    background-image: url("imgIcon/headsetWhite.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -70px;
+    top: -10px;
+}
+.contactMail, .footerAddress{
+    color: white;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 27px ;
+    font-weight: 600;
+}
+.footerLinks{
+    text-align: left;
+    padding-left: 45px;
+}
+.footerLinks > h2{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.linksBlocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.linksBlocks > ul{
+    padding: 0;
+}
+.linksBlocks > ul > li{
+    padding-bottom: 10px;
+}
+.linksBlocks > ul > li > a{
+    font-weight: 600;
+    color: #554D89;
+    font-size: 18px;
+    line-height: 27px;
+}
+.footerSubscribe{
+    text-align: left;
+    padding-left: 46px;
+}
+.footerSubscribe > h2 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+.forSubscribe{
+    margin-top: 20px;
+    background: url("imgIcon/paper-plane.png") no-repeat 205px;
+    outline: none;
+    border-radius: 25px;
+    border-color: #6852ED;
+    height: 36px;
+    width: 245px;
+    padding-left: 20px;
+    opacity: 0.7;
+}
+.author{
+    margin-top: 20px;
+    position: relative;
+}
+.author:before{
+    content: " " ;
+    height: 4px;
+    width: 99px;
+    background-color:#E1DCFF ;
+    position: absolute;
+    top: -13px;
+
+}
+
